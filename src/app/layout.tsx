@@ -22,6 +22,7 @@ export default function RootLayout({
             <nav className="flex gap-6 text-sm text-gray-600">
               <a href="/cities" className="hover:text-blue-600 no-underline">城市列表</a>
               <a href="/compare" className="hover:text-blue-600 no-underline">城市对比</a>
+              <a href="/calculator" className="hover:text-blue-600 no-underline font-medium text-blue-600">💰 收入计算器</a>
               <a href="/submit" className="hover:text-blue-600 no-underline">贡献数据</a>
             </nav>
           </div>

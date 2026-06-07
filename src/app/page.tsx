@@ -21,6 +21,12 @@ export default function HomePage() {
           >
             对比城市
           </a>
+          <a
+            href="/calculator"
+            className="border border-green-600 text-green-600 px-6 py-3 rounded-lg font-medium hover:bg-green-50 no-underline"
+          >
+            💰 算一算能剩多少
+          </a>
         </div>
       </section>
 
@@ -34,6 +40,10 @@ export default function HomePage() {
           {
             title: "城市横向对比",
             desc: "选 2-4 座城市并排比较，一眼看出差异所在。",
+          },
+          {
+            title: "可支配收入计算器",
+            desc: "输入税前月薪，看在各城市税后到手、生活开销、还能剩多少。",
           },
           {
             title: "数据置信度标注",
