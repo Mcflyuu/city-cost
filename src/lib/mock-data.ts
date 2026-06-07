@@ -1,6 +1,35 @@
 // Mock 数据 - 15 座城市完整生活成本数据
 // 当 Supabase 未配置时作为降级数据使用
 
+// 城市列表（用于城市选择器、对比页等）
+export const CITIES_MOCK = [
+  { slug: "beijing", name: "北京", province: "北京", population: "2180万", avg_salary: 12000 },
+  { slug: "shanghai", name: "上海", province: "上海", population: "2480万", avg_salary: 11500 },
+  { slug: "guangzhou", name: "广州", province: "广东", population: "1880万", avg_salary: 9500 },
+  { slug: "shenzhen", name: "深圳", province: "广东", population: "1760万", avg_salary: 11000 },
+  { slug: "hangzhou", name: "杭州", province: "浙江", population: "1220万", avg_salary: 10500 },
+  { slug: "chengdu", name: "成都", province: "四川", population: "2120万", avg_salary: 8200 },
+  { slug: "wuhan", name: "武汉", province: "湖北", population: "1360万", avg_salary: 8500 },
+  { slug: "nanjing", name: "南京", province: "江苏", population: "950万", avg_salary: 9800 },
+  { slug: "xian", name: "西安", province: "陕西", population: "1300万", avg_salary: 7800 },
+  { slug: "chongqing", name: "重庆", province: "重庆", population: "3210万", avg_salary: 7500 },
+  { slug: "suzhou", name: "苏州", province: "江苏", population: "1270万", avg_salary: 9200 },
+  { slug: "tianjin", name: "天津", province: "天津", population: "1380万", avg_salary: 8800 },
+  { slug: "changsha", name: "长沙", province: "湖南", population: "1040万", avg_salary: 8000 },
+  { slug: "zhengzhou", name: "郑州", province: "河南", population: "1260万", avg_salary: 7200 },
+  { slug: "qingdao", name: "青岛", province: "山东", population: "1020万", avg_salary: 7800 },
+];
+
+// 对比页使用的数据 key 列表
+export const COMPARE_LABELS = [
+  "rent_center", "rent_suburb", "rent_share", "utilities", "house_price",
+  "lunch", "dinner_mid", "takeout", "grocery", "coffee", "beer", "water",
+  "transport_monthly", "taxi_start", "taxi_km", "bike_monthly", "parking", "gas",
+  "movie", "gym", "scenic", "internet",
+  "kindy_public", "kindy_private", "tutoring",
+  "clinic", "medicine", "checkup", "dental",
+];
+
 export const MOCK_CITIES: Record<string, any> = {
   beijing: {
     name: "北京", province: "北京", population: "2180万", avg_salary: 12000,
